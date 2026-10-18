@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%" fill="none">
+  <rect width="600" height="360" fill="#0E1726"/>
+  <rect x="20" y="20" width="560" height="320" rx="12" fill="#1B2A4A" stroke="#2B4674" stroke-width="1.5"/>
+  <circle cx="80" cy="70" r="24" fill="#6366F1" opacity="0.2"/>
+  <text x="73" y="77" fill="#818CF8" font-size="20">🤖</text>
+  <text x="120" y="65" fill="#818CF8" font-family="'Inter', sans-serif" font-size="12" font-weight="700">ARTIFICIAL INTELLIGENCE & LLM</text>
+  <text x="120" y="85" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="18" font-weight="700">Enterprise Semantic Search & Agents</text>
+
+  <rect x="60" y="120" width="150" height="55" rx="6" fill="#0E1726" stroke="#2B4674"/>
+  <text x="75" y="142" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="10">KNOWLEDGE CORPUS</text>
+  <text x="75" y="163" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="16" font-weight="700">12M Documents</text>
+
+  <rect x="230" y="120" width="150" height="55" rx="6" fill="#0E1726" stroke="#2B4674"/>
+  <text x="245" y="142" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="10">HALLUCINATION RATE</text>
+  <text x="245" y="163" fill="#10B981" font-family="'Inter', sans-serif" font-size="16" font-weight="700">&lt; 0.05% (RAG Guard)</text>
+
+  <g transform="translate(60, 200)">
+    <rect width="480" height="80" rx="8" fill="#09101C" stroke="#1E293B"/>
+    <text x="20" y="35" fill="#94A3B8" font-family="monospace" font-size="12">&gt; Embedding Model: Self-hosted fine-tuned 70B</text>
+    <text x="20" y="60" fill="#22D3EE" font-family="monospace" font-size="12">&gt; Vector Database: Milvus cluster with zero data leakage</text>
+  </g>
+</svg>

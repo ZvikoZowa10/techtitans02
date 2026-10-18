@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 460" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="abGrad" x1="0" y1="0" x2="640" y2="460" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101828"/>
+      <stop offset="1" stop-color="#172B4D"/>
+    </linearGradient>
+    <filter id="aboutShadow" x="-10%" y="-10%" width="120%" height="130%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="640" height="460" rx="20" fill="url(#abGrad)"/>
+  
+  <!-- Subtle Grid -->
+  <g stroke="rgba(255,255,255,0.05)" stroke-width="1">
+    <line x1="0" y1="115" x2="640" y2="115"/>
+    <line x1="0" y1="230" x2="640" y2="230"/>
+    <line x1="0" y1="345" x2="640" y2="345"/>
+    <line x1="160" y1="0" x2="160" y2="460"/>
+    <line x1="320" y1="0" x2="320" y2="460"/>
+    <line x1="480" y1="0" x2="480" y2="460"/>
+  </g>
+
+  <!-- World Map Dots / Global Hub Representation -->
+  <circle cx="160" cy="180" r="8" fill="#2563EB"/>
+  <circle cx="160" cy="180" r="18" stroke="#2563EB" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <text x="140" y="215" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11" font-weight="600">San Francisco</text>
+
+  <circle cx="320" cy="150" r="8" fill="#22D3EE"/>
+  <circle cx="320" cy="150" r="18" stroke="#22D3EE" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <text x="300" y="185" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11" font-weight="600">Harare HQ</text>
+
+  <circle cx="480" cy="220" r="8" fill="#38BDF8"/>
+  <circle cx="480" cy="220" r="18" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <text x="460" y="255" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11" font-weight="600">Singapore</text>
+
+  <!-- Arcs connecting hubs -->
+  <path d="M160 180 Q240 120 320 150 Q400 130 480 220" stroke="#38BDF8" stroke-width="2" stroke-dasharray="6 4" fill="none" opacity="0.6"/>
+
+  <!-- Milestone Banner Card -->
+  <g filter="url(#aboutShadow)">
+    <rect x="80" y="270" width="480" height="135" rx="14" fill="#0F172A" stroke="#334155" stroke-width="1.5"/>
+    <text x="110" y="305" fill="#22D3EE" font-family="'Inter', sans-serif" font-size="12" font-weight="700">A DECADE OF ENGINEERING EXCELLENCE</text>
+    
+    <g transform="translate(110, 320)">
+      <text x="0" y="30" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="28" font-weight="800">10+ Years</text>
+      <text x="0" y="52" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11">Enterprise Track Record</text>
+    </g>
+
+    <g transform="translate(260, 320)">
+      <text x="0" y="30" fill="#2563EB" font-family="'Inter', sans-serif" font-size="28" font-weight="800">250+</text>
+      <text x="0" y="52" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11">Senior Architects & Engineers</text>
+    </g>
+
+    <g transform="translate(420, 320)">
+      <text x="0" y="30" fill="#10B981" font-family="'Inter', sans-serif" font-size="28" font-weight="800">500+</text>
+      <text x="0" y="52" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11">Transformations Delivered</text>
+    </g>
+  </g>
+</svg>

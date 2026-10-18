@@ -1,0 +1,176 @@
+/* ==========================================================================
+   TECH TITANS — ENTERPRISE STYLESHEET
+   Design System: Microsoft Simplicity & Alphabet Technical Rigor
+   High Contrast (WCAG AAA) • Pure HTML5 + Bootstrap 5.3 CSS + Custom CSS
+   Google Fonts Icons (Material Symbols Outlined) • Zero JavaScript
+   ========================================================================== */
+
+:root {
+  /* ==========================================================================
+     BRAND COLOR PALETTE (Microsoft Simplicity + Alphabet Silicon Valley Blue)
+     High contrast, crystalline legibility, zero ambiguity.
+     ========================================================================== */
+  --tt-navy-primary: #0F172A;
+  --tt-navy-secondary: #1E293B;
+  --tt-navy-dark: #0B0F19;
+
+  /* Enterprise Blue (Microsoft / Silicon Valley Flagship Accent) */
+  --tt-blue-electric: #1A73E8;
+  --tt-blue-hover: #1557B0;
+  --tt-blue-active: #0D47A1;
+  --tt-blue-light: #EFF6FF;
+  --tt-blue-border: #BFDBFE;
+
+  /* Secondary Accents */
+  --tt-cyan-accent: #06B6D4;
+  --tt-cyan-dark: #0891B2;
+  --tt-emerald: #10B981;
+  --tt-amber: #D97706;
+  --tt-red: #DC2626;
+
+  /* Surface Hierarchy */
+  --surface-canvas: #FFFFFF;
+  --surface-striped: #F8FAFC; /* Uniform alternating section tone */
+  --surface-card: #FFFFFF;
+  --surface-subtle: #F1F5F9;
+  --surface-panel: #FFFFFF;
+  --surface-hero: #0B0F19;    /* Executive anchor hero */
+  --surface-footer: #0B0F19;  /* Grounded anchor footer */
+  --surface-nav: #FFFFFF;     /* Microsoft clean white navigation */
+
+  /* High-Contrast Text Palette (WCAG AAA Exceeded) */
+  --text-bright: #0F172A;     /* Obsidian headings (16.2:1 against white) */
+  --text-body: #1E293B;       /* Slate 800 body copy (13.5:1 against white) */
+  --text-muted: #475569;      /* Slate 600 secondary (5.8:1 against white) */
+  --text-subtle: #64748B;     /* Slate 500 tertiary */
+  --text-on-dark: #FFFFFF;    /* 17.5:1 against #0B0F19 */
+  --text-on-dark-lead: #F8FAFC;
+  --text-on-dark-body: #E2E8F0;
+  --text-on-dark-muted: #CBD5E1;
+
+  /* Borders */
+  --border-quiet: #E2E8F0;    /* Razor-sharp 1px dividers */
+  --border-strong: #CBD5E1;
+  --border-accent: #1A73E8;
+  --border-dark: #1E293B;
+  --border-nav: #E5E7EB;
+
+  /* Primary Accent Mapping */
+  --accent: #1A73E8;
+  --accent-hover: #1557B0;
+  --accent-tint: #EFF6FF;
+  --accent-border: #BFDBFE;
+
+  /* Typography */
+  --font-main: 'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-code: 'Geist Mono', monospace;
+
+  /* Elevations & Concentric Radii */
+  --radius-outer: 12px;
+  --radius-mid: 8px;
+  --radius-inner: 6px;
+  --radius-pill: 9999px;
+
+  --shadow-flat: 0 1px 2px rgba(15, 23, 42, 0.05);
+  --shadow-card: 0 1px 3px rgba(15, 23, 42, 0.08), 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-raised: 0 4px 14px rgba(15, 23, 42, 0.08), 0 2px 4px rgba(15, 23, 42, 0.04);
+  --shadow-hover: 0 12px 28px -4px rgba(15, 23, 42, 0.12), 0 6px 12px -2px rgba(15, 23, 42, 0.06);
+
+  /* Transitions */
+  --transition-fast: 0.15s ease-in-out;
+  --transition-base: 0.25s ease-in-out;
+}
+
+/* Base Resets */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--surface-canvas);
+  color: var(--text-body);
+  line-height: 1.65;
+  font-size: 1rem;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  position: relative;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: var(--font-main);
+  color: var(--text-bright);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+p, li, blockquote {
+  color: var(--text-body);
+  text-wrap: pretty;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.texture-overlay {
+  display: none !important;
+}
+
+/* Google Fonts Icons: Material Symbols Outlined */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Screen reader skip link */
+.skip-to-content {
+  position: absolute;
+  top: -60px;
+  left: 1rem;
+  background: var(--accent);
+  color: #FFFFFF;
+  padding: 0.5rem 1rem;
+  z-index: 1040;
+  border-radius: var(--radius-inner);
+  transition: top var(--transition-fast);
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.skip-to-content:focus {
+  top: 1rem;
+  outline: 2px solid #FFFFFF;
+}

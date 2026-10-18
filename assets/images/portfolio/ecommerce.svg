@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%" fill="none">
+  <rect width="600" height="360" fill="#1C1917"/>
+  <rect x="20" y="20" width="560" height="320" rx="12" fill="#292524" stroke="#44403C" stroke-width="1.5"/>
+  <circle cx="80" cy="70" r="24" fill="#F59E0B" opacity="0.2"/>
+  <text x="73" y="77" fill="#FBBF24" font-size="20">🛍️</text>
+  <text x="120" y="65" fill="#FBBF24" font-family="'Inter', sans-serif" font-size="12" font-weight="700">RETAIL & E-COMMERCE</text>
+  <text x="120" y="85" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="18" font-weight="700">High-Traffic Headless Marketplace</text>
+
+  <!-- Cart & Checkout metric -->
+  <rect x="60" y="120" width="150" height="55" rx="6" fill="#1C1917" stroke="#44403C"/>
+  <text x="75" y="142" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="10">BLACK FRIDAY PEAK</text>
+  <text x="75" y="163" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="16" font-weight="700">99.999% Uptime</text>
+
+  <rect x="230" y="120" width="150" height="55" rx="6" fill="#1C1917" stroke="#44403C"/>
+  <text x="245" y="142" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="10">CHECKOUT CONVERSION</text>
+  <text x="245" y="163" fill="#FBBF24" font-family="'Inter', sans-serif" font-size="16" font-weight="700">+34% Lift</text>
+
+  <g transform="translate(60, 200)">
+    <rect width="480" height="80" rx="8" fill="#141210" stroke="#292524"/>
+    <text x="20" y="35" fill="#A8A29E" font-family="monospace" font-size="12">&gt; Microservices: 42 decoupled endpoints</text>
+    <text x="20" y="60" fill="#F59E0B" font-family="monospace" font-size="12">&gt; Global CDN latency: 38ms (P95)</text>
+  </g>
+</svg>

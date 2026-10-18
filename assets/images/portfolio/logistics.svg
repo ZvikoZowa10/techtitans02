@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%" fill="none">
+  <rect width="600" height="360" fill="#181325"/>
+  <rect x="20" y="20" width="560" height="320" rx="12" fill="#241E3A" stroke="#433766" stroke-width="1.5"/>
+  <circle cx="80" cy="70" r="24" fill="#A855F7" opacity="0.2"/>
+  <text x="73" y="77" fill="#C084FC" font-size="20">🚚</text>
+  <text x="120" y="65" fill="#C084FC" font-family="'Inter', sans-serif" font-size="12" font-weight="700">LOGISTICS & SUPPLY CHAIN</text>
+  <text x="120" y="85" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="18" font-weight="700">Global Fleet Dispatch Engine</text>
+
+  <!-- Route Nodes -->
+  <circle cx="100" cy="240" r="10" fill="#A855F7"/>
+  <circle cx="250" cy="180" r="10" fill="#38BDF8"/>
+  <circle cx="400" cy="250" r="10" fill="#34D399"/>
+  <circle cx="500" cy="190" r="10" fill="#F59E0B"/>
+  <path d="M100 240 Q180 150 250 180 T400 250 T500 190" stroke="#C084FC" stroke-width="3" stroke-dasharray="8 6" fill="none"/>
+
+  <rect x="60" y="115" width="145" height="50" rx="6" fill="#181325" stroke="#3A2E5B"/>
+  <text x="75" y="135" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="10">FLEET VEHICLES</text>
+  <text x="75" y="153" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="15" font-weight="700">18,500 Active</text>
+
+  <rect x="225" y="115" width="145" height="50" rx="6" fill="#181325" stroke="#3A2E5B"/>
+  <text x="240" y="135" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="10">FUEL EFFICIENCY</text>
+  <text x="240" y="153" fill="#34D399" font-family="'Inter', sans-serif" font-size="15" font-weight="700">+22.4% Saved</text>
+</svg>
